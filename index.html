@@ -1,0 +1,146 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <title>E-Commerce Website</title>
+    <style>
+      /* external css: flickity.css */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      .carousel {
+        background: #fafafa;
+        width: 90%;
+      }
+      .carousel-cell-image {
+        display: block;
+        max-height: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+        opacity: 0;
+        -webkit-transition: opacity 0.4s;
+        transition: opacity 0.4s;
+      }
+
+      .carousel-cell {
+        width: 66%;
+        height: 400px;
+        margin-right: 10px;
+        background: #333;
+      }
+
+      /* fade in lazy loaded image */
+      .carousel-cell-image.flickity-lazyloaded,
+      .carousel-cell-image.flickity-lazyerror {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card border-black border-2 rounded-lg">
+      <div
+        class="bg-white border-slate-100 border-b rounded-t-xl p-4 pb-6 space-y-6"
+      >
+        <div class="items-center space-x-4 pb-10">
+          <div class="carousel" data-flickity='{ "lazyLoad": true, "wrapAround": true }'>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/tulip.jpg"
+                alt="tulip"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/grapes.jpg"
+                alt="grapes"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/raspberries.jpg"
+                alt="raspberries"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/wolf.jpg"
+                alt="wolf"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/shore.jpg"
+                alt="sea"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/leaf-droplets.jpg"
+                alt="leaf droplets"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/gulls.jpg"
+                alt="gulls"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/touch-screen.jpg"
+                alt="touch screen"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                data-flickity-lazyload="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/van.jpg"
+                alt="van"
+              />
+            </div>
+          </div>
+          <div class="min-w-0 flex-auto space-y-1 font-semibold">
+            <h2 class="text-slate-500 text-lg leading-6">Title</h2>
+            <h2 class="text-slate-900 text-sm">Description</h2>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-50 text-slate-500 rounded-b-xl flex items-center">
+        <div class="flex-auto flex items-center justify-evenly">
+          <button type="button" aria-label="Add to favorites">
+            <i class="fas fa-cart-circle-plus"></i>
+          </button>
+          <button type="button"></button>
+          <button type="button" aria-label="Rewind 10 seconds"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
